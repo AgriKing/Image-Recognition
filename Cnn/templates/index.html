@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Classifier</title>
+    <style>
+        nav{
+            background:rgb(93, 255, 78);
+            padding: 5px;
+            margin: 2px;
+        }
+        h1{
+            color: white;
+        }
+        .form-group1{
+            margin: 10px;
+            color: green;
+        }
+        .form-group2{
+            margin: 7px;
+            color: green;
+            hoverable: true;
+                      
+        }
+        button {
+            background-color:rgb(162, 255, 165); /* Green background */
+            color: white; /* White text */
+            border: none; /* Remove border */
+            padding: 10px 20px; /* Add padding */
+            text-align: center; /* Center the text */
+            text-decoration: none; /* Remove underline */
+            display: inline-block; /* Make it inline with other elements */
+            font-size: 16px; /* Text size */
+            margin: 4px 2px; /* Margin around the button */
+            cursor: pointer; /* Cursor changes to pointer on hover */
+            border-radius: 8px; /* Rounded corners */
+            transition: background-color 0.3s; /* Smooth transition on hover */
+        }
+        button:hover{
+            background-color:rgb(77, 255, 83);
+        }
+    </style>
+</head>
+<body><nav>
+    <h1>Image Classifier</h1></nav>
+    <form action="/predict" method="post" enctype="multipart/form-data">
+        <div class="form-group1"><label for="file">Upload an image:</label></div>
+        <input class="form-group2" type="file" id="file" name="file" accept="image/*">
+        <br><br>
+        <button class="submit" type="submit">Classify</button>
+    </form>
+</body>
+</html>

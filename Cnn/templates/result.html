@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+            background-color: #f0f0f0;
+        }
+
+        .result-container {
+            background-color: #4CAF50; /* Green background */
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            margin: 0 auto;
+        }
+
+        .result-container h2 {
+            font-size: 24px;
+            margin: 0;
+        }
+
+        .back-button {
+            margin-top: 40px;
+            background-color: #008CBA;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        h2{
+            margin-bottom: 20px;
+            padding: 20px;
+        }
+
+        .back-button:hover {
+            background-color: #007B9E;
+        }
+    </style>
+</head>
+<body>
+    <div class="result-container">
+        <h2>Predicted Class: {{ result }}</h2>
+
+        <a href="/" class="back-button">Go Back</a>
+    </div>
+</body>
+</html>
